@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Forum&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary : #536942;
+    --secondary:#ffd936;
+    --white:#efefef;
+}
+
+body {
+    font-family: "DM Sans", sans-serif;
+    color: var(--primary);
+}
+
+#main {
+    background-image: url(img/main.png);
+    min-height: 70vh;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 16px;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    gap: 28px;
+    align-items: center;
+}
+
+.nav-list a {
+    color: var(--white);
+}
+
+.btn {
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn-secondary {
+    border: 2px solid var(--white);
+    color: white;
+    font-weight: bold;
+}
+
+.btn-primary {
+    border: none;
+    background: var(--secondary);
+    color: var(--primary);
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 80px;
+    color: var(--white);
+}
+
+.main-content .intro-heading {
+    font-size: 50px;
+    margin-top: -20px;
+}
+.main-content .main-heading {
+    font-size: 110px;
+    margin-top: -20px;
+}
+.main-content p {
+    max-width: 250px;
+    margin-bottom: 10px;
+}
+.menu-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    display: none;
+}
+
+@media screen and (max-width: 520px) {
+    .menu-btn {
+        display: block;
+    }
+    .nav-list {
+        flex-direction: column;
+        background: grey;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 80%;
+        height: 100vh;
+        padding-top: 80px;
+    }
+
+    .nav-list li:not(:last-child) {
+        text-align: left;
+        width: 100%;
+        padding: 10px 30px;
+        border-bottom: 1px solid var(--white);
+    }
+}

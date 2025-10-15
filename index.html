@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <section id="main">
         <div class="container">
@@ -18,6 +20,7 @@
                     <li><a href="#">Contact</a></li>
                     <li><button class="btn btn-secondary">202-505-3333</button></li>
                 </ul>
+                <img src="img/menu.svg" class="menu-btn" alt="menu">
             </nav>
 
             <div class="main-content">
@@ -35,23 +38,26 @@
             <div class="section-title">
                 <h1>Our Services</h1>
                 <div class="line"></div>
-            </div>  
+            </div>
 
             <div class="services">
                 <div class="service">
                     <img src="img/service-1.png" alt="">
                     <h3>Web Design</h3>
-                    <p>Focus on how you can help and benefit your user. Use simple words so that you don't confuse people.</p>
+                    <p>Focus on how you can help and benefit your user. Use simple words so that you don't confuse
+                        people.</p>
                 </div>
                 <div class="service">
                     <img src="img/service-2.png" alt="">
                     <h3>Web Design</h3>
-                    <p>Focus on how you can help and benefit your user. Use simple words so that you don't confuse people.</p>
+                    <p>Focus on how you can help and benefit your user. Use simple words so that you don't confuse
+                        people.</p>
                 </div>
                 <div class="service">
                     <img src="img/service-3.png" alt="">
                     <h3>Web Design</h3>
-                    <p>Focus on how you can help and benefit your user. Use simple words so that you don't confuse people.</p>
+                    <p>Focus on how you can help and benefit your user. Use simple words so that you don't confuse
+                        people.</p>
                 </div>
             </div>
 
@@ -59,7 +65,8 @@
                 <div class="container">
                     <img src="img/quote.png" alt="">
                     <h1>
-                        "Original and with an innate understanding of their customer's needs, the team at Love nature are always a pleasure to work with."
+                        "Original and with an innate understanding of their customer's needs, the team at Love nature
+                        are always a pleasure to work with."
                     </h1>
 
                     <div class="profile">
@@ -73,12 +80,62 @@
                 <div class="container">
                     <div class="about-content">
                         <h4>About Us</h4>
-                        <h1>Tell website visitors who are </h1>
+                        <h1>Tell website visitors who you are and why they should choose your bbusiness.</h1>
+                        <p>Because when a visitor first lands on your website, you are a stranger to them. They have to
+                            get to know you in order to want to read your blog posts, subscribe to your email newsletter
+                            , or buy what you're selling.</p>
+                        <button class="btn btn-primary">
+                            Let's Talk Now
+                        </button>
                     </div>
+
+                    <div class="about-image">
+                        <img src="img/about.png" alt="">
+                    </div>
+
                 </div>
             </section>
-            
+
+            <section id="questions">
+                <div class="container">
+                    <h1>Questions?</h1>
+                    <p>Whether you're curious about features , a free trial ,or even press, we're here to answer any
+                        questions.</p>
+                    <button class="btn btn-primary">Let's Talk Now</button>
+                </div>
+            </section>
+
         </div>
     </section>
+
+
+
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <img src="img/logo-colored.png" alt="" class="footerLogo">
+            <p>Love Nature by Tyler Moore</p>
+        </div>
+    </footer>
+
+
+
+
+
+    <script>
+        const navBtn = document.querySelector('.menu-btn');
+        const navList = document.querySelector('.nav-list');
+
+        navBtn.addEventListener('click', function() {
+            navList.classList.toggle("active");
+        });
+    </script>
 </body>
+
 </html>
